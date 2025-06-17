@@ -1,0 +1,137 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+main, section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Add soft animation to images */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background: linear-gradient(to right, #a0d8ef, #ffffff);
+  padding: 1.5rem 1rem;
+  position: relative;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+footer {
+  background: #a0d8ef;
+  color: #003366;
+  font-weight: 500;
+}
+
+/* Header title */
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #003366;
+}
+
+/* Desktop navbar styling */
+#navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.8rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+#navbar a:hover {
+  background-color: rgba(0, 51, 102, 0.1);
+}
+
+/* Hamburger toggle button */
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #003366;
+  cursor: pointer;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  z-index: 1001;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  #navbar.show {
+    display: flex;
+  }
+
+  #navbar a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+/* Buttons (for cart/checkout if needed) */
+button {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background-color: #003366;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00509e;
+}
